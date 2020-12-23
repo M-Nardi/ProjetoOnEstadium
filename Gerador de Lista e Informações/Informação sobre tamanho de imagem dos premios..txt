@@ -1,0 +1,12 @@
+As imagens inseridas na roleta deverão ter tamanho:
+largura:128px 
+altura:128px
+
+As imagens inseridas na hora da premiação "voce ganhou um novo item" devem ter tamanho:
+largura:698px 
+altura:393px
+
+
+As imagens devem estar na mesma pasta que o arquivo "Index"
+
+Para mais duvidas ligue : 011-96174 0691, procure por Marcello Nardi.

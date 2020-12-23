@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Roulette</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="roulette.css" />
+	
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+    
+    <script type="text/javascript">
+        
+        
+
+   
+    $(document).ready(function(){
+        var enableSubmit = function(ele) {
+            $(ele).removeAttr("disabled");
+        }
+        
+        
+        
+        $(".roulette-submit").click(function() {
+            var that = this;
+            $(this).attr("disabled", true);
+            $("#premio").fadeOut(1000).delay(10000);
+            $("#premio").fadeIn(3000).delay(4000);
+                    
+            $("#premio").fadeOut(2000);
+            
+            
+            setTimeout(function() { enableSubmit(that) }, 19100);
+            
+        });
+        
+		
+		$('.send').click(function(){
+            var button = $(this);
+        button.attr('disabled', 'disabled');
+            setTimeout(function() {
+                button.removeAttr('disabled');
+            },19100);
+        });
+	
+	$(document).ready(function(){
+				$('#roulette-start').click(function(){
+				    $("#wrapper").fadeOut(0);
+                    $("#wrapper").fadeIn(2000);
+                });
+    });
+	
+	
+    
+    $('#premio').hide();
+       
+	});
+	
+	
+    
+    </script>
+    
+    <style>
+	html{
+		background:url('Images/background.png') no-repeat center center fixed;
+		-webkit-background-size:cover;
+		-moz-background-size:cover;
+		-o-background-size:cover;
+		background-size:cover;
+	}
+	</style>
+    
+	
+    
+</head>
+<body>
+    
+    <div id="premio"></div>
+    
+    <div id="wrapper" >
+        <div id="roulette">
+            <div class="roulette-item"><img></div>
+			<div class="roulette-item"><img></div>
+			<div class="roulette-item"><img></div>
+			<div class="roulette-item"><img></div>
+			<div class="roulette-item"><img></div>
+			<div class="roulette-item"><img></div>
+			<div class="roulette-item"><img></div>
+			<div class="roulette-item"><img></div>
+			<div class="roulette-item"><img></div>
+			<div class="roulette-item"><img></div>
+			<div class="roulette-item"><img></div>
+        </div>
+        <div id="botao" class="btn" >
+        
+            <input class="roulette-submit" id="roulette-start" src="Images/botao.png" type="Image" class="send" onmousedown="playwin()" >
+
+        </div>
+    </div>
+    
+    <input type="hidden" id="roulette-select-winner" value="0">
+    
+	
+    
+    <script src="roulette.js" src="fade.js"></script>
+</body>
+</html>
